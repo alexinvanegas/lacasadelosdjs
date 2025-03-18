@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import MenuIcon from '@mui/icons-material/Menu';
-const logo = '/logohomedjs.png';
+const logo = 'https://www.lacasadelosdjs.com/assets/logohomedjs.png';
 
 const pages = [
   { name: 'Inicio', path: '/' },

@@ -5,7 +5,7 @@ import HeadsetIcon from '@mui/icons-material/Headset';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import GroupIcon from '@mui/icons-material/Group';
 import RadioIcon from '@mui/icons-material/Radio';
-const logoImage = '/logohomedjs.png';
+const logoImage = 'https://www.lacasadelosdjs.com/assets/logohomedjs.png';
 
 const featureItems = [
   {
