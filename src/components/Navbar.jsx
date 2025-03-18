@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '/LogoHomeDjs.jpg';
+import logo from '../../LogoHomeDjs.jpg';
 
 const pages = [
   { name: 'Inicio', path: '/' },
@@ -39,42 +39,49 @@ const Navbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box
-            component={motion.img}
-            src={logo}
-            alt="La Casa de Los DJs Logo"
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            whileHover={{ scale: 1.1, filter: 'brightness(1.2)' }}
-            transition={{ duration: 0.3 }}
-            sx={{
-              display: { xs: 'none', md: 'flex' },
-              mr: 2,
-              height: 60,
-              width: 'auto',
-              filter: 'drop-shadow(0 0 8px rgba(255,23,68,0.6))',
-              borderRadius: '10px',
-              cursor: 'pointer'
-            }}
-          />
-          <Typography
-            variant="h6"
-            noWrap
             component={RouterLink}
             to="/"
             sx={{
-              mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Orbitron',
-              fontWeight: 700,
-              letterSpacing: '.2rem',
-              color: 'white',
+              alignItems: 'center',
               textDecoration: 'none',
+              flexGrow: 0
             }}
           >
-            La Casa de Los DJs
-          </Typography>
+            <Box
+              component={motion.img}
+              src={logo}
+              alt="La Casa de Los DJs Logo"
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              whileHover={{ scale: 1.1, filter: 'brightness(1.2)' }}
+              transition={{ duration: 0.3 }}
+              sx={{
+                mr: 2,
+                height: 60,
+                width: 'auto',
+                filter: 'drop-shadow(0 0 8px rgba(255,23,68,0.6))',
+                borderRadius: '10px'
+              }}
+            />
+            <Typography
+              variant="h6"
+              noWrap
+              sx={{
+                mr: 2,
+                display: { xs: 'none', md: 'flex' },
+                fontFamily: 'Orbitron',
+                fontWeight: 700,
+                letterSpacing: '.2rem',
+                color: 'white',
+                textDecoration: 'none',
+              }}
+            >
+              La Casa de Los DJs
+            </Typography>
+          </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="menu de navegación"
@@ -117,41 +124,47 @@ const Navbar = () => {
           </Box>
 
           <Box
-            component={motion.img}
-            src={logo}
-            alt="La Casa de Los DJs Logo"
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            whileHover={{ scale: 1.1, filter: 'brightness(1.2)' }}
-            transition={{ duration: 0.3 }}
-            sx={{
-              display: { xs: 'flex', md: 'none' },
-              mr: 2,
-              height: 50,
-              width: 'auto',
-              filter: 'drop-shadow(0 0 8px rgba(255,23,68,0.6))',
-              borderRadius: '10px',
-              cursor: 'pointer'
-            }}
-          />
-          <Typography
-            variant="h5"
-            noWrap
             component={RouterLink}
             to="/"
             sx={{
-              mr: 2,
               display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'Orbitron',
-              fontWeight: 700,
-              letterSpacing: '.2rem',
-              color: 'white',
+              alignItems: 'center',
               textDecoration: 'none',
+              flexGrow: 1,
+              justifyContent: 'center'
             }}
           >
-            La Casa de Los DJs
-          </Typography>
+            <Box
+              component={motion.img}
+              src={logo}
+              alt="La Casa de Los DJs Logo"
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              whileHover={{ scale: 1.1, filter: 'brightness(1.2)' }}
+              transition={{ duration: 0.3 }}
+              sx={{
+                mr: 2,
+                height: 50,
+                width: 'auto',
+                filter: 'drop-shadow(0 0 8px rgba(255,23,68,0.6))',
+                borderRadius: '10px'
+              }}
+            />
+            <Typography
+              variant="h5"
+              noWrap
+              sx={{
+                display: { xs: 'flex', md: 'none' },
+                fontFamily: 'Orbitron',
+                fontWeight: 700,
+                letterSpacing: '.2rem',
+                color: 'white',
+                textDecoration: 'none',
+              }}
+            >
+              La Casa de Los DJs
+            </Typography>
+          </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
             {pages.map((page) => (
