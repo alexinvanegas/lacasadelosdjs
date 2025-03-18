@@ -5,7 +5,6 @@ import HeadsetIcon from '@mui/icons-material/Headset';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import GroupIcon from '@mui/icons-material/Group';
 import RadioIcon from '@mui/icons-material/Radio';
-const logoImage = 'https://www.lacasadelosdjs.com/assets/logohomedjs.png';
 
 const featureItems = [
   {
@@ -71,7 +70,7 @@ const Home = () => {
           >
             <Box
               component={motion.img}
-              src={logoImage}
+              src="/logohomedjs.png"
               alt="La Casa de Los DJs Logo"
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
