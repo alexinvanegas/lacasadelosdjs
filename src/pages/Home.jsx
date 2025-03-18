@@ -70,7 +70,7 @@ const Home = () => {
           >
             <Box
               component={motion.img}
-              src="/LogoHomeDjs.jpg"
+              src="/logohomedjs.jpg"
               alt="La Casa de Los DJs Logo"
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}

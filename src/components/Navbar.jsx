@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../../LogoHomeDjs.jpg';
+import logo from '../../logohomedjs.jpg';
 
 const pages = [
   { name: 'Inicio', path: '/' },
