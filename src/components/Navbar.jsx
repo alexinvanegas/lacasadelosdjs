@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../../logohomedjs.jpg';
+import logo from '../../logohomedjs.jpg?url';
 
 const pages = [
   { name: 'Inicio', path: '/' },
@@ -50,7 +50,7 @@ const Navbar = () => {
           >
             <Box
               component={motion.img}
-              src={logo}
+              src={new URL(logo, import.meta.url).href}
               alt="La Casa de Los DJs Logo"
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
@@ -136,7 +136,7 @@ const Navbar = () => {
           >
             <Box
               component={motion.img}
-              src={logo}
+              src={new URL(logo, import.meta.url).href}
               alt="La Casa de Los DJs Logo"
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
